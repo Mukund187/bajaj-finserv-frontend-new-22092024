@@ -57,7 +57,7 @@ const App = () => {
         file_b64: file ? file : null // Only add file_b64 if file is provided
       };
 
-      const res = await axios.post('http://localhost:8001/bfhl', payload); // Adjust to backend URL
+      const res = await axios.post('https://ra2111027020102.onrender.com/bfhl', payload); // Adjust to backend URL
       setResponse(res.data); // Set response data from backend
       setFilteredResponse(null); // Reset filtered response
       setError('');          // Reset error
